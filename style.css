@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #17a2b8;
+    border: 2px solid grey;
+    margin: 5px;
+    padding: 0px;
+}
+.media {
+    border: 2px solid grey;
+}
+.footer {
+    text-align: center;
+}
+.card {
+    text-align: center;
+}
+.column {
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#social {
+    width: 250px;
+    margin-left: 20px;
+}
+.form-group {
+    margin: 25px;
+}
