@@ -4,6 +4,10 @@
     margin: 5px;
     padding: 0px;
 }
+.aboutMeTitle {
+    padding: 5px;
+    text-align: center;
+}
 .footer {
     text-align: center;
     padding: 10px;
