@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="./reset.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -21,32 +23,16 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-dark p-4">
-                <h5 class="text-white h4">Welcome to my About Me Page!</h5>
-                <span class="text-muted">Created April 2020</span>
-              </div>
-            </div>
-            <nav class="navbar navbar-dark bg-dark">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </nav>
-          </div>
-        <nav class="navbar navbar-dark bg-grey justify-content-end">
-            <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="./index.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./contact.html">Contact</a>
-            </li>
+      <div class="container">
+        <nav>
+          <div class="nav-wrapper">
+            <a class="brand-logo center">2020 Portfolio</a>
+            <ul class="left hide-on-med-and-down">
+              <li><a href="./index.html">About</a></li>
+              <li><a href="./portfolio.html">Portfolio</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
+          </div>
         </nav>
         <div class="row">
             <div class="col-sm-8">
@@ -59,43 +45,30 @@
                   <br><br>If you would like to connect, I have linked a few of my social media accounts and how you can contact me.</p>
             </section>
             </div>
-        <div class="column">
-        <div class="col-xs-2">
-            <h4 >Links</h4>
-            <ul class="media" id="social">
+        <div class="col-sm-4 socialDiv">
+            <h4 >Links:</h4>
+            <ul class="media" id="socialIcons">
                 <li>
-                  <a href="https://www.linkedin.com/in/acerjak/"><img width="75px" height="75px" src="https://icons-for-free.com/iconfiles/png/512/linked+linkedin+logo+social+icon-1320191784782940875.png" alt="LinkedIn"></a>
+                  <a class="icons" href="https://www.linkedin.com/in/acerjak/"><img width="75px" height="75px" src="./images/linkedinIcon.png" alt="LinkedIn"></a>
                 </li>
                 <li>
-                  <a href="https://github.com/acerjak"><img width="75px" height="75px" src="data:image/png;base64,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" class="mr-3" alt="GitHub"></a>
+                  <a class="icons" href="https://github.com/acerjak"><img width="75px" height="75px" src="./images/githubIcon.png" alt="GitHub"></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/amandacerjak/?hl=en"><img width= "75px" height="75px" src="https://toppng.com/public/uploads/preview/ew-instagram-logo-transparent-related-keywords-logo-instagram-vector-2017-115629178687gobkrzwak.png" alt="Instagram"></a>
+                  <a class="icons" href="https://www.instagram.com/amandacerjak/?hl=en"><img width= "75px" height="75px" src="./images/instagramIcon.png" alt="Instagram"></a>
                   </a>
                 </li>
               </ul>
         </div>
-        <br>
-            <div class="col-xs-4">
-                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Fun Fact</div>
-                    <div class="card-body">
-                    <h5 class="card-title">Hobbies:</h5>
-                      <p class="card-text">Some of my favorite things to do are relax at the beach, spend time with friends, go horseback riding, play video games, and read.</p>
-                    </div>
-                  </div>   
-            </div>
-        </div>
-        <div class="w-100"></div>
-    </div>  
-    </div> 
-    <br>
+      </div>  
     <br>
     <footer class="footer mt-1">
         <a href="./index.html"><button type="button" class="btn btn-outline-info">About</button></a>
         <a href="./portfolio.html"><button type="button" class="btn btn-outline-info">Portfolio</button></a>
         <a href="./contact.html"><button type="button" class="btn btn-outline-info">Contact</button></a>
     </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

@@ -4,23 +4,29 @@
     margin: 5px;
     padding: 0px;
 }
-.media {
-    border: 2px solid grey;
-}
 .footer {
     text-align: center;
+    padding: 10px;
 }
 .card {
     text-align: center;
 }
-.column {
-    text-align: center;
-    margin-left: 50px;
-    margin-top: 10px;
+.media {
+    padding: 10px;
 }
-#social {
+.socialDiv {
+    align-self: center;
+}
+#socialIcons {
     width: 250px;
     margin-left: 20px;
+}
+.icons {
+    padding: 10px;
+}
+.contactTitle {
+    text-align: center;
+    padding: 20px;
 }
 .form-group {
     margin: 25px;
