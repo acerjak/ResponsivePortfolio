@@ -4,22 +4,47 @@
     margin: 5px;
     padding: 0px;
 }
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+nav .brand-logo{
+    font-size: 3rem;
+}
+.navLinks {
+    font-size: 20px;
+}
+.me {
+    padding: 10px;
+}
 .aboutMeTitle {
     padding: 5px;
     text-align: center;
+}
+.aboutParagraph {
+    font-size: 22px;
+    line-height: 2.5rem;
+    padding: 25px;
 }
 .footer {
     text-align: center;
     padding: 10px;
 }
 .card {
-    text-align: center;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
 }
-.media {
+.contentBox {
     padding: 10px;
 }
-.socialDiv {
-    align-self: center;
+.row {
+    align-content: center;
+}
+.media {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
 }
 #socialIcons {
     width: 250px;
